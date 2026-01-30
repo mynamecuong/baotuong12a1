@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Lớp 12A1 - THPT Vinh Xuân</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: #d0f0c0; margin: 0; padding: 0;">
+
+    <header style="background-color: #2e8b57; padding: 10px;">
+        <table width="100%" border="0">
+            <tr>
+                <td width="30%" style="text-align: center;">
+                    <img src="logo vx nho.png" width="150" alt="Logo">
+                    <h2 style="color: white; margin: 5px;">LỚP 12A1 - TRƯỜNG THPT VINH XUÂN</h2>
+                    <p style="color: white; font-size: 15px;">Email: 12a1thptvinhxuan@gmail.com</p>
+                </td>
+                <td width="70%" style="text-align: center;">
+                    <img id="banner_anh" src="anh1 (1).jpg" width="1000" height="300" 
+                         style="border-radius: 5px; transition: 0.5s; object-fit: cover; object-position: center;">
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <script>
+        var index = 0;
+        var danhSachAnh = ["anh1 (1).jpg", "anh1 (2).jpg", "anh1 (3).jpg"];
+        function autoSlide() {
+            var imgTag = document.getElementById("banner_anh");
+            index++;
+            if (index >= danhSachAnh.length) {
+                index = 0;
+            }
+            imgTag.src = danhSachAnh[index];
+            setTimeout(autoSlide, 3000);
+        }
+        window.onload = autoSlide;
+    </script>
+
+    <div style="background-color: #a3d9a5; text-align: right; padding: 5px; font-style: italic;">
+        Ngày 30 tháng 01 năm 2026
+    </div>
+
+    <table width="100%" border="0" cellpadding="10" cellspacing="0">
+        <tr>
+            <td width="20%" style="vertical-align: top;">
+                <div style="position: sticky; top: 10px; background-color: #ffffff; border: 1px solid #2e8b57; border-radius: 5px;">
+                    <h3 style="background-color: #2e8b57; color: white; margin: 0; padding: 10px;">Danh Mục</h3>
+                    <ul style="list-style-type: '➤ '; padding: 20px; line-height: 2;">
+                        <li><a href="#gioithieu" class="menu">Bài giới thiệu</a></li>
+                        <li><a href="#gocanh" class="menu">Góc hình ảnh</a></li>
+                        <li><a href="#amnhac" class="menu">Âm nhạc & Clip</a></li>
+                        <li><a href="#binhluan" class="menu">Góc bình luận</a></li>
+                    </ul>
+                </div>
+            </td>
+
+            <td class="cell_text" style="padding: 20px; vertical-align: top;">
+                <h3 id="gioithieu">BÀI GIỚI THIỆU</h3>
+                <div style="min-height: 300px; background: #f9f9f9; margin-bottom: 20px; padding: 15px; border-radius: 5px;">
+                    <p style="text-align: justify; line-height: 1.6;">
+                        Lớp 12A1 – Trường THPT Vinh Xuân là một tập thể đoàn kết, năng động và giàu tinh thần trách nhiệm. Lớp có 38 thành viên, mỗi người một cá tính riêng nhưng luôn biết gắn bó, hỗ trợ nhau trong học tập cũng như trong các hoạt động tập thể.
+                        <br><br>
+                        Trong suốt những năm học dưới mái trường THPT Vinh Xuân, lớp 12A1 luôn cố gắng phấn đấu để đạt kết quả tốt trong học tập, tích cực tham gia các phong trào do nhà trường tổ chức. Không chỉ chú trọng kiến thức, tập thể lớp còn quan tâm rèn luyện đạo đức, kỹ năng sống và tinh thần đoàn kết.
+                        <br><br>
+                        Đồng hành cùng lớp là thầy Tuệ – giáo viên chủ nhiệm, người luôn tận tâm, quan tâm và định hướng cho tập thể lớp cả trong học tập lẫn cuộc sống. Nhờ sự dẫn dắt của thầy, lớp 12A1 ngày càng trưởng thành, có ý thức hơn về trách nhiệm của bản thân, đặc biệt trong năm học cuối cấp đầy thử thách này.
+                        <br><br>
+                        Lớp 12A1 tự hào là một phần của Trường THPT Vinh Xuân và sẽ luôn nỗ lực hết mình để lưu giữ những kỷ niệm đẹp của tuổi học trò. 🌱
+                    </p>
+                </div>
+
+                <h3 id="gocanh">GÓC HÌNH ẢNH</h3>
+                <img src="anh2 (1).jpg" class="img" width="100%" style="margin-bottom: 10px;">
+                <img src="anh2 (2).jpg" class="img" width="100%" style="margin-bottom: 10px;">
+                <img src="anh2 (3).jpg" class="img" width="100%" style="margin-bottom: 10px;">
+
+                <h3 id="amnhac">GÓC ÂM NHẠC & VIDEO</h3>
+                <video width="100%" controls style="border-radius: 8px; border: 2px solid #2e8b57;">
+                    <source src="video2 (1).mp4" type="video/mp4">
+                </video>
+                
+                <hr>
+                <h4 id="binhluan">Góc bình luận</h4>
+                <p>Tên: <input type="text" style="width: 100%; padding: 5px;"></p>
+                <p>Cảm nhận: <textarea rows="3" style="width: 100%; padding: 5px;"></textarea></p>
+                <input type="button" value="Gửi ý kiến" style="background-color: #2e8b57; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 3px;">
+            </td>
+
+            <td width="25%" style="vertical-align: top;">
+                <div style="text-align: center; background-color: white; padding: 10px; border: 1px solid #ddd; margin-bottom: 10px; border-radius: 5px;">
+                    <input type="text" placeholder="Tìm kiếm trong web..." style="width: 70%; padding: 5px;">
+                    <input type="button" value="Tìm" style="padding: 5px 10px;">
+                </div>
+
+                <div style="background-color: white; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+                    <h3 style="text-align: center; background-color: #32cd32; color: black; margin: 0; padding: 10px;">Thời khóa biểu 12A1</h3>
+                    <div class="tkb-container" style="padding: 5px;">
+                        <table border="1" cellspacing="0" cellpadding="5" style="width:100%; border-collapse: collapse; text-align: center; font-family: Arial, sans-serif; font-size: 13px;">
+                            <tr style="background-color: #2e8b57; color: white;">
+                                <th>Thứ</th>
+                                <th>T1</th>
+                                <th>T2</th>
+                                <th>T3</th>
+                                <th>T4</th>
+                                <th>T5</th>
+                            </tr>
+                            <tr>
+                                <td><b>T2</b></td>
+                                <td>CC</td>
+                                <td>TNHN</td>
+                                <td>TOÁN</td>
+                                <td>TOÁN</td>
+                                <td>LÝ</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td><b>T3</b></td>
+                                <td>GDDP</td>
+                                <td>TIN</td>
+                                <td>TNHN</td>
+                                <td>VĂN</td>
+                                <td>VĂN</td>
+                            </tr>
+                            <tr>
+                                <td><b>T4</b></td>
+                                <td>SINH</td>
+                                <td>TOÁN</td>
+                                <td>TOÁN</td>
+                                <td>HÓA</td>
+                                <td>HÓA</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td><b>T5</b></td>
+                                <td>ANH</td>
+                                <td>HÓA</td>
+                                <td>LÝ</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><b>T6</b></td>
+                                <td>SINH</td>
+                                <td>VĂN</td>
+                                <td>ANH</td>
+                                <td>ANH</td>
+                                <td>TIN</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td><b>T7</b></td>
+                                <td>SỬ</td>
+                                <td>LÝ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <p style="text-align: center; margin-top: 10px;"><b>GVCN: THẦY TUỆ</b></p>
+                        <div style="background-color: white; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+                    <h3 style="text-align: center; background-color: #32cd32; color: black; margin: 0; padding: 10px;">Địa điểm trường THPT Vinh Xuân</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.0819257119642!2d107.75153871125964!3d16.471388828479736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31419e7cee31fa13%3A0x72eaca184ae9bae6!2zVHLGsOG7nW5nIFRIUFQgVmluaCBYdcOibg!5e0!3m2!1svi!2s!4v1769745723442!5m2!1svi!2s" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <footer style="background-color: #2e8b57; color: white; padding: 20px; margin-top: 20px;">
+        <table width="100%">
+            <tr>
+                <td>
+                    <p>Người tạo: Nguyễn Viết Cương</p>
+                    <p><b>Email:</b> 12a1thptvinhxuan@gmail.com</p>
+                </td>
+                <td style="text-align: right;">
+                    <p>Cập nhật lần cuối: 30/01/2026</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>
